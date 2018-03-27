@@ -1,0 +1,112 @@
+.bg1{
+    background: #fff;
+}
+.header{
+    padding: 0.3rem 0;
+    background: #0a0a0a;
+    position: relative;
+    // z-index: 1000;
+    .header-left-menu{
+        display: inline-block;
+        vertical-align: middle;
+        font-weight: bold;
+    }
+    a{
+        color: #FFF;
+        &:hover, &:focus{
+            color: darken(#fff, 10%)
+        }
+    }
+    .custom-logo-container{
+        h1{
+            margin: 0;
+            font-size: 1.2rem;
+        }
+    }
+}
+.right-menu{
+    margin-right: -1rem;
+}
+
+@media screen and (min-width: 64em){
+    .off-canvas.in-canvas-for-large {
+        float: left;
+        height: calc(100vh - 38px);
+        width: 250px;
+        border-right: 1px solid #eee;
+        opacity: 1;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        .menu{
+            opacity: 1;
+            -webkit-transition: all 0.25s ease;
+            -moz-transition: all 0.25s ease;
+            -ms-transition: all 0.25s ease;
+            -o-transition: all 0.25s ease;
+            transition: all 0.25s ease;
+        }
+    }
+}
+
+
+.offCanvasMenuToggle{
+    cursor: pointer;
+    .i-custom{
+        font-size:1.4rem;
+        vertical-align: middle;
+        color: #fff;
+    }
+}
+
+.test-div{
+    height: 25vh;
+    background: #cdcdcd;
+}
+div#offCanvasLeft.hide-reveal{
+    width: 0;
+    border: 0;
+    opacity: 0;
+    .menu{
+        opacity: 0;
+    }
+}
+.off-canvas{
+    background: #FFF;
+    li {
+        border-bottom: 1px solid #dcdcdc;
+        display: block;
+        a {
+            color: #303030;
+            display: block;
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 20px;
+            padding: 20px 16px;
+            text-transform: uppercase;
+        }
+        .submenu{
+            padding-bottom: 1rem;
+            li{
+                border: none;
+                a{
+                    color: #a2a2a2;
+                    display: block;
+                    text-transform: capitalize;
+                    font-size: 0.9rem;
+                    font-weight: 400;
+                    padding: 0.2rem;
+                }
+            }
+        }
+    }
+}
+
+
+
+.promo-info{
+    padding: 0.5rem;
+    line-height: 1rem;
+}
